@@ -4,29 +4,52 @@ import * as stylevar from "../styles/variables";
 import data from "../projectData.json";
 import { Link } from "react-router-dom";
 
-const Project = styled.div`
+const ProjectCard = styled.div`
   width: 100%;
-  height: 25vh;
-  background-color: gray;
-  border: 1px solid black;
+  aspect-ratio: 1;
+  background-color: ${(props) => (props.isDarkTheme ? stylevar.style.darkPrimary : stylevar.style.lightPrimary)};
+  border: 2px solid ${(props) => (props.isDarkTheme ? stylevar.style.lightPrimary : stylevar.style.darkPrimary)};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 2rem;
+  }
 `;
 
 const GridLayout = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  /* gap: 1rem; */
-  justify-content: space-between;
+  gap: 1rem;
   width: 100%;
+  padding-bottom: 25vh;
 
   @media (min-width: ${stylevar.style.tabletWidth}) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-bottom: 30vh;
+  }
+
+  @media (min-width: ${stylevar.style.desktopWidth}) {
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-bottom: 35vh;
   }
 `;
 
-const Container = styled.div`
-`;
+const Container = styled.div``;
 
-function Grid() {
+function Grid({ isDarkTheme }) {
   useEffect(() => {
     console.log(data.projects[0].name);
   }, []);
@@ -35,8 +58,14 @@ function Grid() {
     <Container>
       <GridLayout>
         {data.projects.map((project, index) => (
-          <Link key={index} to={`/project/${project.name}`}>
-            <Project>{project.name}</Project>
+          <Link key={index} to={`/project/${project.name}`} style={{ textDecoration: "none" }}>
+            <ProjectCard isDarkTheme={isDarkTheme}>
+              {project.thumbnail ? (
+                <img src={project.thumbnail} alt={project.name} />
+              ) : (
+                <span>{project.name}</span>
+              )}
+            </ProjectCard>
           </Link>
         ))}
       </GridLayout>

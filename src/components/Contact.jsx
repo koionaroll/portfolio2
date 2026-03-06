@@ -12,7 +12,7 @@ const GetInTouch = styled.div`
 
 `
 
-function Contact() {
+function Contact({ isDarkTheme }) {
   return (
     <Container>
     <Profile>contact</Profile>

@@ -16,7 +16,7 @@ const Container = styled.div`
     }
 `;
 
-function Project() {
+function Project({ isDarkTheme }) {
   const { name } = useParams();
   const project = data.projects.find((project) => project.name === name);
 

@@ -5,7 +5,7 @@ import * as stylevar from "../styles/variables";
 const Container = styled.div`
 `;
 
-function Footer() {
+function Footer({ isDarkTheme }) {
   return (
     <Container>
       <p>Developed by Khôi Tran</p>

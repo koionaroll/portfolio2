@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Grid from "./components/Grid";
@@ -12,30 +12,59 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  background-color: ${(props) => (props.isDarkTheme ? stylevar.style.darkPrimary : stylevar.style.lightPrimary)};
+  color: ${(props) => (props.isDarkTheme ? stylevar.style.lightPrimary : stylevar.style.darkPrimary)};
+  transition: background-color 0.3s ease, color 0.3s ease;
+`;
+
+const MainContent = styled.main`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   padding: 1rem;
+
   @media (min-width: ${stylevar.style.tabletWidth}) {
-    justify-content: space-between;
     padding: 2rem;
   }
+
   @media (min-width: ${stylevar.style.desktopWidth}) {
     margin: 0 auto;
     max-width: 79.5rem;
+    width: 100%;
   }
 `;
 
 function App() {
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("isDarkTheme");
+    if (savedTheme !== null) {
+      setIsDarkTheme(JSON.parse(savedTheme));
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = !isDarkTheme;
+    setIsDarkTheme(newTheme);
+    localStorage.setItem("isDarkTheme", JSON.stringify(newTheme));
+  };
+
   return (
     <>
       <BrowserRouter>
-      <Container>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Grid />} />
-          <Route path="/project/:name" element={<Project />} />
-          <Route path="/aboutme" element={<Contact />} />
-        </Routes>
-        <Footer />
-      </Container>
+        <Container isDarkTheme={isDarkTheme}>
+          <Header isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
+          <MainContent>
+            <Routes>
+              <Route path="/" element={<Grid isDarkTheme={isDarkTheme} />} />
+              <Route path="/project/:name" element={<Project isDarkTheme={isDarkTheme} />} />
+              <Route path="/aboutme" element={<Contact isDarkTheme={isDarkTheme} />} />
+            </Routes>
+            <Footer isDarkTheme={isDarkTheme} />
+          </MainContent>
+        </Container>
       </BrowserRouter>
     </>
   );

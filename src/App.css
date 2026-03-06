@@ -1,11 +1,22 @@
 @import "./styles/_font.css";
 
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
 *{
   box-sizing: border-box;
   text-decoration: none;
   padding: 0;
   margin: 0;
-  font-family: 'Satoshi';
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Satoshi-Medium';
+}
+
+a {
+  color: inherit;
 }
