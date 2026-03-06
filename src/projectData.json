@@ -1,0 +1,103 @@
+{
+    "projects": [
+        {
+            "name": "Project Alpha",
+            "date": "2023-01-15",
+            "desc": "A 3D model of a futuristic cityscape.",
+            "images": [
+                "images/project_alpha_1.jpg",
+                "images/project_alpha_2.jpg",
+                "images/project_alpha_3.jpg"
+            ],
+            "thumbnail": "images/project_alpha_thumbnail.jpg"
+        },
+        {
+            "name": "Project Beta",
+            "date": "2023-03-22",
+            "desc": "A detailed 3D model of a medieval castle.",
+            "images": [
+                "images/project_beta_1.jpg",
+                "images/project_beta_2.jpg",
+                "images/project_beta_3.jpg"
+            ],
+            "thumbnail": "images/project_beta_thumbnail.jpg"
+        },
+        {
+            "name": "Project Gamma",
+            "date": "2023-06-10",
+            "desc": "A 3D model of a modern architectural building.",
+            "images": [
+                "images/project_gamma_1.jpg",
+                "images/project_gamma_2.jpg",
+                "images/project_gamma_3.jpg"
+            ],
+            "thumbnail": "images/project_gamma_thumbnail.jpg"
+        },
+        {
+            "name": "Project Delta",
+            "date": "2023-08-05",
+            "desc": "A 3D model of a space station.",
+            "images": [
+                "images/project_delta_1.jpg",
+                "images/project_delta_2.jpg",
+                "images/project_delta_3.jpg"
+            ],
+            "thumbnail": "images/project_delta_thumbnail.jpg"
+        },
+        {
+            "name": "Project Epsilon",
+            "date": "2023-09-12",
+            "desc": "A 3D model of an ancient temple.",
+            "images": [
+                "images/project_epsilon_1.jpg",
+                "images/project_epsilon_2.jpg",
+                "images/project_epsilon_3.jpg"
+            ],
+            "thumbnail": "images/project_epsilon_thumbnail.jpg"
+        },
+        {
+            "name": "Project Zeta",
+            "date": "2023-10-20",
+            "desc": "A 3D model of a futuristic vehicle.",
+            "images": [
+                "images/project_zeta_1.jpg",
+                "images/project_zeta_2.jpg",
+                "images/project_zeta_3.jpg"
+            ],
+            "thumbnail": "images/project_zeta_thumbnail.jpg"
+        },
+        {
+            "name": "Project Eta",
+            "date": "2023-11-15",
+            "desc": "A 3D model of a fantasy creature.",
+            "images": [
+                "images/project_eta_1.jpg",
+                "images/project_eta_2.jpg",
+                "images/project_eta_3.jpg"
+            ],
+            "thumbnail": "images/project_eta_thumbnail.jpg"
+        },
+        {
+            "name": "Project Theta",
+            "date": "2023-12-01",
+            "desc": "A 3D model of a modern skyscraper.",
+            "images": [
+                "images/project_theta_1.jpg",
+                "images/project_theta_2.jpg",
+                "images/project_theta_3.jpg"
+            ],
+            "thumbnail": "images/project_theta_thumbnail.jpg"
+        },
+        {
+            "name": "Project Iota",
+            "date": "2024-01-10",
+            "desc": "A 3D model of an underwater scene.",
+            "images": [
+                "images/project_iota_1.jpg",
+                "images/project_iota_2.jpg",
+                "images/project_iota_3.jpg"
+            ],
+            "thumbnail": "images/project_iota_thumbnail.jpg"
+        }
+    ]
+}
