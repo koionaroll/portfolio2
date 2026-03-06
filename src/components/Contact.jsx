@@ -15,8 +15,8 @@ const GetInTouch = styled.div`
 function Contact() {
   return (
     <Container>
-    <Profile>Contact</Profile>
-    <GetInTouch>Get In Touch</GetInTouch>
+    <Profile>contact</Profile>
+    <GetInTouch>projects</GetInTouch>
     </Container>
   )
 }
