@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import * as stylevar from "../styles/variables";
 import BarsIcon from "../assets/bars.svg";
 import XIcon from "../assets/x.svg";
@@ -24,7 +24,7 @@ const HeaderContent = styled.div`
   padding: 0;
 
   @media (min-width: ${stylevar.style.tabletWidth}) {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
   }
 
   @media (min-width: ${stylevar.style.desktopWidth}) {
@@ -206,7 +206,7 @@ const LanguageToggle = styled.button`
 function Header({ isDarkTheme, toggleTheme }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [language, setLanguage] = useState("EN");
-  const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -220,16 +220,28 @@ function Header({ isDarkTheme, toggleTheme }) {
     toggleTheme();
   };
 
+  let logoText = "Khôi Tran";
+  if (location.pathname === "/") {
+    logoText = "Khôi Tran";
+  } else if (location.pathname.startsWith("/project/")) {
+    const pathParts = location.pathname.split('/');
+    logoText = decodeURIComponent(pathParts[2]);
+  } else if (location.pathname === "/contact") {
+    logoText = "Contact";
+  } else if (location.pathname === "/about") {
+    logoText = "About";
+  }
+
   return (
     <HeaderContainer isDarkTheme={isDarkTheme}>
       <HeaderContent>
         <Logo onClick={handleLogoClick} isDarkTheme={isDarkTheme}>
-          <h1>Khôi Tran</h1>
+          <h1>{logoText}</h1>
         </Logo>
         <NavMenu isDarkTheme={isDarkTheme}>
-          <Link to="/aboutme">about</Link>
-          <Link to="/">projects</Link>
-          <Link to="/contact">contact</Link>
+          <Link to="/about">About</Link>
+          <Link to="/">Projects</Link>
+          <Link to="/contact">Contact</Link>
           <LanguageToggle isDarkTheme={isDarkTheme} onClick={toggleLanguage}>
             {language}
           </LanguageToggle>
@@ -239,14 +251,14 @@ function Header({ isDarkTheme, toggleTheme }) {
           <img src={XIcon} alt="Close" className="x-icon" />
         </HamburgerMenu>
         <MobileMenu isOpen={isMenuOpen} isDarkTheme={isDarkTheme}>
-          <Link to="/aboutme" onClick={() => setIsMenuOpen(false)}>
-            about
+          <Link to="/about" onClick={() => setIsMenuOpen(false)}>
+            About
           </Link>
           <Link to="/" onClick={() => setIsMenuOpen(false)}>
-            projects
+            Projects
           </Link>
           <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-            contact
+            Contact
           </Link>
           <MobileLanguageToggle isDarkTheme={isDarkTheme} onClick={toggleLanguage}>
             {language}

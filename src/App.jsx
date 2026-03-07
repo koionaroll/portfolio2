@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import About from "./components/About";
 import Grid from "./components/Grid";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
@@ -60,7 +61,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Grid isDarkTheme={isDarkTheme} />} />
               <Route path="/project/:name" element={<Project isDarkTheme={isDarkTheme} />} />
-              <Route path="/aboutme" element={<Contact isDarkTheme={isDarkTheme} />} />
+              <Route path="/about" element={<About isDarkTheme={isDarkTheme} />} />
+              <Route path="/contact" element={<Contact isDarkTheme={isDarkTheme} />} />
             </Routes>
             <Footer isDarkTheme={isDarkTheme} />
           </MainContent>

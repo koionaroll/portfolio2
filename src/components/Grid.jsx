@@ -32,18 +32,15 @@ const GridLayout = styled.div`
   grid-template-columns: 1fr;
   gap: 1rem;
   width: 100%;
-  padding-bottom: 25vh;
 
   @media (min-width: ${stylevar.style.tabletWidth}) {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    padding-bottom: 30vh;
   }
 
   @media (min-width: ${stylevar.style.desktopWidth}) {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    padding-bottom: 35vh;
   }
 `;
 

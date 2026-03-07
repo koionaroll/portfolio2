@@ -3,15 +3,15 @@ import styled from "styled-components";
 import * as stylevar from "../styles/variables";
 
 const Container = styled.div`
- margin-top: 5rem;
+
 `;
 
-function Footer({ isDarkTheme }) {
+function About({ isDarkTheme }) {
   return (
     <Container>
-      <p>Developed by Khôi Tran</p>
+      <p>This is the about</p>
     </Container>
   );
 }
 
-export default Footer;
+export default About;
