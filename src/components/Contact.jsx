@@ -55,7 +55,7 @@ const Email = styled.form`
   textarea {
     border: none;
     padding: 1rem;
-    font-size: 1rem;
+    font-size: ${stylevar.style.smallFontSize};
     font-weight: 500;
     width: 100%;
     height: 200px;
@@ -72,7 +72,7 @@ const Email = styled.form`
   button {
     border: none;
     padding: 0.75rem 1.5rem;
-    font-size: 1rem;
+    font-size: ${stylevar.style.smallFontSize};
     width: fit-content;
     background-color: ${(props) => (props.isDarkTheme ? stylevar.style.lightPrimary : stylevar.style.darkPrimary)};
     color: ${(props) => (props.isDarkTheme ? stylevar.style.darkPrimary : stylevar.style.lightPrimary)};
@@ -87,14 +87,15 @@ const Email = styled.form`
 
     @media (min-width: ${stylevar.style.tabletWidth}) {
       padding: 1rem 2rem;
-      font-size: 1.1rem;
+      font-size: ${stylevar.style.smallFontSize};
     }
   }
 
   section {
+    height: 4rem;
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: ${stylevar.style.smallFontSize};
     color: ${(props) => (props.isDarkTheme ? stylevar.style.lightPrimary : stylevar.style.darkPrimary)};
   }
 `;
