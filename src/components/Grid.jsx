@@ -16,7 +16,10 @@ const ProjectCard = styled.div`
   transition: all 0.3s ease;
 
   &:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 7px 15px rgba(0, 0, 0, 0.5); */
+    box-shadow: ${(props) => (props.isDarkTheme ? 
+    "0 7px 15px rgba(255, 255, 255, 0.5)"
+    :"0 7px 15px rgba(0, 0, 0, 0.5)")};
   }
 
   img {

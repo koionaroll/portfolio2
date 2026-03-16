@@ -4,21 +4,57 @@ import data from "../data.json";
 import * as stylevar from "../styles/variables";
 import styled from "styled-components";
 
-const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    div{
-        display: flex;
-        flex-direction: column;
-    }
-    @media (min-width: ${stylevar.style.tabletWidth}) {
-        display: flex;
-    }
+const Container = styled.div``;
+
+const SectionsGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  @media (max-width: ${stylevar.style.desktopWidth}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: ${stylevar.style.tabletWidth}) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const Section = styled.div``;
+
+const SectionImage = styled.img`
+  width: 100%;
+  display: block;
+  margin-bottom: 12px;
+  object-fit: cover;
+`;
+
+const SectionTitle = styled.h3`
+  font-family: ${stylevar.style.blackFontFamily};
+  font-size: ${stylevar.style.largeFontSize};
+  color: ${({ $isDark }) => ($isDark ? stylevar.style.lightPrimary : stylevar.style.darkPrimary)};
+  margin: 0 0 12px 0;
+`;
+
+const SectionText = styled.p`
+  font-family: ${stylevar.style.mediumFontFamily};
+  font-size: ${stylevar.style.smallFontSize};
+  color: ${({ $isDark }) => ($isDark ? stylevar.style.lightPrimary : stylevar.style.darkPrimary)};
+  line-height: 1.7;
+  text-align: justify;
+  margin: 0;
+`;
+
+const DateTag = styled.p`
+  font-family: ${stylevar.style.mediumFontFamily};
+  font-size: ${stylevar.style.smallFontSize};
+  color: ${({ $isDark }) => ($isDark ? stylevar.style.lightPrimary : stylevar.style.darkPrimary)};
+  margin: 0 0 32px 0;
 `;
 
 function Project({ isDarkTheme }) {
   const { name } = useParams();
-  const project = data.projects.find((project) => project.name === name);
+  const project = data.projects.find((p) => p.name === name);
 
   if (!project) {
     return <div>Project not found</div>;
@@ -26,13 +62,18 @@ function Project({ isDarkTheme }) {
 
   return (
     <Container>
-      <p>{project.name}</p>
-      <p>{project.desc}</p>
-      <div>
-        {project.images.map((image, index) => (
-          <img key={index} src={image} alt={`${project.name} ${index + 1}`} />
+      <DateTag $isDark={isDarkTheme}>{project.date}</DateTag>
+      <SectionsGrid>
+        {project.sections.map((section, i) => (
+          <Section key={i}>
+            {section.image && (
+              <SectionImage src={section.image} alt={section.title} />
+            )}
+            <SectionTitle $isDark={isDarkTheme}>{section.title}</SectionTitle>
+            <SectionText $isDark={isDarkTheme}>{section.text}</SectionText>
+          </Section>
         ))}
-      </div>
+      </SectionsGrid>
     </Container>
   );
 }
