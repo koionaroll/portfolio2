@@ -99,5 +99,27 @@
             ],
             "thumbnail": "images/project_iota_thumbnail.jpg"
         }
-    ]
+    ],
+    "about": {
+        "profile": {
+            "image": "",
+            "name": "Khôi Tran",
+            "subtitle": "the five boxing wizards jump quickly",
+            "subtitleUpper": "THE FIVE BOXING WIZARDS JUMP QUICKLY"
+        },
+        "sections": [
+            {
+                "title": "About Me",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget dignissim lectus. Sed lorem enim, scelerisque ac euismod nec, mattis a metus. Fusce at consequat ante. Curabitur viverra eu quam eget accumsan. Nulla commodo eu diam eu semper. In fermentum fringilla bibendum. Nulla tempus pretium velit non eleifend. Nunc mattis porta euismod. Curabitur sem velit, vulputate sed suscipit nec, ornare at purus. Nam id velit a dolor pulvinar lobortis. Mauris quam ex, auctor vel varius non, feugiat quis sem. Nam et risus ante. Vestibulum."
+            },
+            {
+                "title": "Experience",
+                "text": "Morbi pulvinar tincidunt gravida. Praesent lorem lacus, convallis in placerat sit amet, fermentum eget leo. Sed tempus tempus tortor nec viverra. Nullam porttitor sem nec mi scelerisque dapibus. Praesent aliquet in odio in venenatis. Suspendisse id nisi accumsan, pretium magna accumsan, consequat libero. Vestibulum accumsan aliquam quam, at volutpat eros gravida eget. Phasellus iaculis aliquet ultrices. Nulla pretium est a magna ullamcorper volutpat. Donec vulputate lobortis lobortis. Suspendisse eu enim quis elit euismod euismod sit amet vitae arcu. Duis vitae nunc turpis. Ut eu lectus rutrum, egestas risus eget, rutrum mauris. Aenean urna est, pharetra sit amet sapien ac, maximus placerat ligula."
+            },
+            {
+                "title": "Skills",
+                "text": "Nam tristique libero et ex rutrum tincidunt. Vestibulum id tincidunt lacus. Aliquam non magna diam. Maecenas ornare orci non augue tincidunt luctus. Morbi lacinia lorem nec nulla condimentum, non volutpat ipsum pharetra. Sed eleifend imperdiet odio, nec finibus lacus semper at. Cras laoreet diam et turpis euismod, non laoreet nisi ullamcorper."
+            }
+        ]
+    }
 }

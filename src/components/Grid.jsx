@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import * as stylevar from "../styles/variables";
-import data from "../projectData.json";
+import data from "../data.json";
 import { Link } from "react-router-dom";
 
 const ProjectCard = styled.div`

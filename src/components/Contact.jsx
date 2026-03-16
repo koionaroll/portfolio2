@@ -78,9 +78,11 @@ const Email = styled.form`
     color: ${(props) => (props.isDarkTheme ? stylevar.style.darkPrimary : stylevar.style.lightPrimary)};
     cursor: pointer;
     align-self: flex-end;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
     &:hover {
-      background-color: #3a3a3a;
+      background-color: ${(props) => (props.isDarkTheme ? stylevar.style.darkPrimary : stylevar.style.lightPrimary)};
+      color: ${(props) => (props.isDarkTheme ? stylevar.style.lightPrimary : stylevar.style.darkPrimary)};
     }
 
     @media (min-width: ${stylevar.style.tabletWidth}) {

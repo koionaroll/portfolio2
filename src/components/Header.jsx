@@ -41,6 +41,10 @@ const Logo = styled.button`
   cursor: pointer;
   transition: color 0.3s ease;
 
+  &:hover {
+    color: ${(props) => (props.isDarkTheme ? stylevar.style.lightPrimary : stylevar.style.darkPrimary)};
+  }
+
   h1 {
     font-family: ${stylevar.style.blackFontFamily};
     font-size: ${stylevar.style.TitleFontSize};
@@ -63,10 +67,22 @@ const NavMenu = styled.nav`
     color: ${(props) => (props.isDarkTheme ? stylevar.style.darkPrimary : stylevar.style.lightPrimary)};
     font-family: ${stylevar.style.mediumFontFamily};
     font-size: ${stylevar.style.mediumFontSize};
-    transition: opacity 0.3s ease;
+    position: relative;
+    padding-bottom: 2px;
 
-    &:hover {
-      opacity: 0.8;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: ${(props) => (props.isDarkTheme ? stylevar.style.darkPrimary : stylevar.style.lightPrimary)};
+      transition: width 0.25s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
     }
   }
 `;
@@ -91,7 +107,8 @@ const HamburgerMenu = styled.button`
   .bars-icon {
     width: 100%;
     height: 100%;
-    filter: ${(props) => (props.isDarkTheme ? "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%)" : "brightness(0) saturate(100%) invert(88%) sepia(7%) saturate(431%) hue-rotate(33deg) brightness(97%) contrast(94%)")};
+filter: ${(props) => (props.isDarkTheme ?"brightness(0) saturate(100%) invert(28%) sepia(7%) saturate(262%) hue-rotate(72deg) brightness(93%) contrast(88%)"
+  : "brightness(0) saturate(100%) invert(88%) sepia(7%) saturate(431%) hue-rotate(33deg) brightness(97%) contrast(94%)" )}; 
     opacity: ${(props) => (props.isOpen ? 0 : 1)};
     transition: opacity 0.15s ease;
   }
@@ -100,7 +117,8 @@ const HamburgerMenu = styled.button`
     position: absolute;
     width: 100%;
     height: 100%;
-    filter: ${(props) => (props.isDarkTheme ? "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%)" : "brightness(0) saturate(100%) invert(88%) sepia(7%) saturate(431%) hue-rotate(33deg) brightness(97%) contrast(94%)")};
+filter: ${(props) => (props.isDarkTheme ?"brightness(0) saturate(100%) invert(28%) sepia(7%) saturate(262%) hue-rotate(72deg) brightness(93%) contrast(88%)"
+  : "brightness(0) saturate(100%) invert(88%) sepia(7%) saturate(431%) hue-rotate(33deg) brightness(97%) contrast(94%)" )};    
     opacity: ${(props) => (props.isOpen ? 1 : 0)};
     transition: opacity 0.15s ease;
   }
@@ -142,10 +160,23 @@ const MobileMenu = styled.nav`
     color: ${(props) => (props.isDarkTheme ? stylevar.style.darkPrimary : stylevar.style.lightPrimary)};
     font-family: ${stylevar.style.mediumFontFamily};
     font-size: ${stylevar.style.mediumFontSize};
-    transition: opacity 0.3s ease;
+    position: relative;
+    padding-bottom: 2px;
+    align-self: flex-start;
 
-    &:hover {
-      opacity: 0.8;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: ${(props) => (props.isDarkTheme ? stylevar.style.darkPrimary : stylevar.style.lightPrimary)};
+      transition: width 0.25s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
     }
   }
 `;
@@ -172,8 +203,7 @@ const MobileLanguageToggle = styled.button`
   }
 
   &:hover {
-    opacity: 0.9;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+   transform: scale(1.1);
   }
 `;
 
@@ -189,17 +219,16 @@ const LanguageToggle = styled.button`
   font-size: ${stylevar.style.smallFontSize};
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease;
-
+  transition: transform 0.2s ease-in-out, all 0.2s ease-in-out;
+  
   @media (min-width: ${stylevar.style.tabletWidth}) {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
+  
   &:hover {
-    opacity: 0.9;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+   transform: scale(1.1);
   }
 `;
 

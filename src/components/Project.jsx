@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import data from "../projectData.json";
+import data from "../data.json";
 import * as stylevar from "../styles/variables";
 import styled from "styled-components";
 
