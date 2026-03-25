@@ -31,6 +31,8 @@ const ProfileImage = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: scale(1.15);
+    transform-origin: top;
   }
 `;
 

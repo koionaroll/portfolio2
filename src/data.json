@@ -1,116 +1,224 @@
 {
-    "projects": [
+  "projects": [
+    {
+      "name": "ScrySheets",
+      "date": "March 2026",
+      "thumbnail": "images/project_alpha_thumbnail.jpg",
+      "sections": [
         {
-            "name": "ScrySheets",
-            "date": "March 2026",
-            "thumbnail": "images/project_alpha_thumbnail.jpg",
-            "sections": [
-                { "title": "Overview", "text": "A 3D model of a futuristic cityscape featuring towering skyscrapers and neon-lit streets.", "image": "images/project_alpha_1.jpg" },
-                { "title": "Process", "text": "Built using procedural modelling techniques with custom shaders to achieve the cyberpunk aesthetic.", "image": "images/project_alpha_2.jpg" },
-                { "title": "Outcome", "text": "Final render exported at 4K with volumetric lighting and post-processing compositing.", "image": "images/project_alpha_3.jpg" }
-            ]
+          "title": "Overview",
+          "text": "A 3D model of a futuristic cityscape featuring towering skyscrapers and neon-lit streets.",
+          "image": "images/project_alpha_1.jpg"
         },
         {
-            "name": "Project Beta",
-            "date": "May 2026",
-            "thumbnail": "images/project_beta_thumbnail.jpg",
-            "sections": [
-                { "title": "Overview", "text": "A detailed 3D model of a medieval castle with hand-sculpted stonework and intricate battlements.", "image": "images/project_beta_1.jpg" },
-                { "title": "Process", "text": "High-poly sculpt baked down to game-ready topology, textured with PBR materials in Substance Painter.", "image": "images/project_beta_2.jpg" },
-                { "title": "Outcome", "text": "Delivered as a real-time asset with LODs suitable for Unreal Engine environments.", "image": "images/project_beta_3.jpg" }
-            ]
+          "title": "Process",
+          "text": "Built using procedural modelling techniques with custom shaders to achieve the cyberpunk aesthetic.",
+          "image": "images/project_alpha_2.jpg"
         },
         {
-            "name": "Project Gamma",
-            "date": "2023-06-10",
-            "thumbnail": "images/project_gamma_thumbnail.jpg",
-            "sections": [
-                { "title": "Overview", "text": "A 3D model of a modern architectural building exploring minimalist concrete and glass design.", "image": "images/project_gamma_1.jpg" },
-                { "title": "Process", "text": "Modelled to architectural specification with accurate material properties and natural lighting simulation.", "image": "images/project_gamma_2.jpg" },
-                { "title": "Outcome", "text": "Photorealistic visualisation used for client presentation and planning approval.", "image": "" }
-            ]
-        },
-        {
-            "name": "Project Delta",
-            "date": "2023-08-05",
-            "thumbnail": "images/project_delta_thumbnail.jpg",
-            "sections": [
-                { "title": "Overview", "text": "A 3D model of a space station orbiting Earth, designed with modular docking bays and solar arrays.", "image": "images/project_delta_1.jpg" },
-                { "title": "Process", "text": "Hard-surface modelling with kitbash components, textured to simulate weathered metal and worn panels.", "image": "images/project_delta_2.jpg" },
-                { "title": "Outcome", "text": "Rendered in a deep-space HDRI environment with motion blur for cinematic stills.", "image": "images/project_delta_3.jpg" }
-            ]
-        },
-        {
-            "name": "Project Epsilon",
-            "date": "2023-09-12",
-            "thumbnail": "images/project_epsilon_thumbnail.jpg",
-            "sections": [
-                { "title": "Overview", "text": "A 3D model of an ancient temple with moss-covered columns and crumbling stonework.", "image": "images/project_epsilon_1.jpg" },
-                { "title": "Process", "text": "Environment built with scatter foliage, decal-based wear, and physically-based erosion maps.", "image": "" },
-                { "title": "Outcome", "text": "Atmospheric scene lit with golden-hour HDRI and volumetric god-rays for dramatic effect.", "image": "images/project_epsilon_3.jpg" }
-            ]
-        },
-        {
-            "name": "Project Zeta",
-            "date": "2023-10-20",
-            "thumbnail": "images/project_zeta_thumbnail.jpg",
-            "sections": [
-                { "title": "Overview", "text": "A 3D model of a futuristic vehicle blending aerodynamic form with heavy-duty utility design.", "image": "images/project_zeta_1.jpg" },
-                { "title": "Process", "text": "Designed from concept sketches into a clean NURBS surface model then converted to subdivision mesh.", "image": "images/project_zeta_2.jpg" },
-                { "title": "Outcome", "text": "Studio-lit product render with a turntable animation for portfolio presentation.", "image": "images/project_zeta_3.jpg" }
-            ]
-        },
-        {
-            "name": "Project Eta",
-            "date": "2023-11-15",
-            "thumbnail": "images/project_eta_thumbnail.jpg",
-            "sections": [
-                { "title": "Overview", "text": "A 3D model of a fantasy creature with organic musculature and intricate scale detail.", "image": "images/project_eta_1.jpg" },
-                { "title": "Process", "text": "ZBrush sculpt with dynamesh for primary forms, then refined with layers for secondary and tertiary detail.", "image": "images/project_eta_2.jpg" },
-                { "title": "Outcome", "text": "Rigged and posed for a hero shot render, with subsurface scattering skin shader for realism.", "image": "images/project_eta_3.jpg" }
-            ]
-        },
-        {
-            "name": "Project Theta",
-            "date": "2023-12-01",
-            "thumbnail": "images/project_theta_thumbnail.jpg",
-            "sections": [
-                { "title": "Overview", "text": "A 3D model of a modern skyscraper with parametric facade patterning and reflective curtain-wall glazing.", "image": "images/project_theta_1.jpg" },
-                { "title": "Process", "text": "Procedural facade generated via Houdini, exported as geometry cache into the Blender scene.", "image": "images/project_theta_2.jpg" },
-                { "title": "Outcome", "text": "Dusk render with interior light bloom and city-reflection in the glass panels.", "image": "" }
-            ]
-        },
-        {
-            "name": "Project Iota",
-            "date": "2024-01-10",
-            "thumbnail": "images/project_iota_thumbnail.jpg",
-            "sections": [
-                { "title": "Overview", "text": "A 3D model of an underwater scene with bioluminescent coral, kelp forests and caustic lighting.", "image": "images/project_iota_1.jpg" },
-                { "title": "Process", "text": "Volume scatter shader used for water medium, caustics projected via light texture maps.", "image": "images/project_iota_2.jpg" },
-                { "title": "Outcome", "text": "Final animation loop rendered in Cycles at 60 fps for use as an ambient background installation.", "image": "images/project_iota_3.jpg" }
-            ]
+          "title": "Outcome",
+          "text": "Final render exported at 4K with volumetric lighting and post-processing compositing.",
+          "image": "images/project_alpha_3.jpg"
         }
-    ],
-    "about": {
-        "profile": {
-            "image": "",
-            "name": "Khôi Tran",
-            "subtitle": "the five boxing wizards jump quickly",
-            "subtitleUpper": "THE FIVE BOXING WIZARDS JUMP QUICKLY"
+      ]
+    },
+    {
+      "name": "Project Beta",
+      "date": "May 2026",
+      "thumbnail": "images/project_beta_thumbnail.jpg",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "A detailed 3D model of a medieval castle with hand-sculpted stonework and intricate battlements.",
+          "image": "images/project_beta_1.jpg"
         },
-        "sections": [
-            {
-                "title": "About Me",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget dignissim lectus. Sed lorem enim, scelerisque ac euismod nec, mattis a metus. Fusce at consequat ante. Curabitur viverra eu quam eget accumsan. Nulla commodo eu diam eu semper. In fermentum fringilla bibendum. Nulla tempus pretium velit non eleifend. Nunc mattis porta euismod. Curabitur sem velit, vulputate sed suscipit nec, ornare at purus. Nam id velit a dolor pulvinar lobortis. Mauris quam ex, auctor vel varius non, feugiat quis sem. Nam et risus ante. Vestibulum."
-            },
-            {
-                "title": "Experience",
-                "text": "Morbi pulvinar tincidunt gravida. Praesent lorem lacus, convallis in placerat sit amet, fermentum eget leo. Sed tempus tempus tortor nec viverra. Nullam porttitor sem nec mi scelerisque dapibus. Praesent aliquet in odio in venenatis. Suspendisse id nisi accumsan, pretium magna accumsan, consequat libero. Vestibulum accumsan aliquam quam, at volutpat eros gravida eget. Phasellus iaculis aliquet ultrices. Nulla pretium est a magna ullamcorper volutpat. Donec vulputate lobortis lobortis. Suspendisse eu enim quis elit euismod euismod sit amet vitae arcu. Duis vitae nunc turpis. Ut eu lectus rutrum, egestas risus eget, rutrum mauris. Aenean urna est, pharetra sit amet sapien ac, maximus placerat ligula."
-            },
-            {
-                "title": "Skills",
-                "text": "Nam tristique libero et ex rutrum tincidunt. Vestibulum id tincidunt lacus. Aliquam non magna diam. Maecenas ornare orci non augue tincidunt luctus. Morbi lacinia lorem nec nulla condimentum, non volutpat ipsum pharetra. Sed eleifend imperdiet odio, nec finibus lacus semper at. Cras laoreet diam et turpis euismod, non laoreet nisi ullamcorper."
-            }
-        ]
+        {
+          "title": "Process",
+          "text": "High-poly sculpt baked down to game-ready topology, textured with PBR materials in Substance Painter.",
+          "image": "images/project_beta_2.jpg"
+        },
+        {
+          "title": "Outcome",
+          "text": "Delivered as a real-time asset with LODs suitable for Unreal Engine environments.",
+          "image": "images/project_beta_3.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Project Gamma",
+      "date": "2023-06-10",
+      "thumbnail": "images/project_gamma_thumbnail.jpg",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "A 3D model of a modern architectural building exploring minimalist concrete and glass design.",
+          "image": "images/project_gamma_1.jpg"
+        },
+        {
+          "title": "Process",
+          "text": "Modelled to architectural specification with accurate material properties and natural lighting simulation.",
+          "image": "images/project_gamma_2.jpg"
+        },
+        {
+          "title": "Outcome",
+          "text": "Photorealistic visualisation used for client presentation and planning approval.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "name": "Project Delta",
+      "date": "2023-08-05",
+      "thumbnail": "images/project_delta_thumbnail.jpg",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "A 3D model of a space station orbiting Earth, designed with modular docking bays and solar arrays.",
+          "image": "images/project_delta_1.jpg"
+        },
+        {
+          "title": "Process",
+          "text": "Hard-surface modelling with kitbash components, textured to simulate weathered metal and worn panels.",
+          "image": "images/project_delta_2.jpg"
+        },
+        {
+          "title": "Outcome",
+          "text": "Rendered in a deep-space HDRI environment with motion blur for cinematic stills.",
+          "image": "images/project_delta_3.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Project Epsilon",
+      "date": "2023-09-12",
+      "thumbnail": "images/project_epsilon_thumbnail.jpg",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "A 3D model of an ancient temple with moss-covered columns and crumbling stonework.",
+          "image": "images/project_epsilon_1.jpg"
+        },
+        {
+          "title": "Process",
+          "text": "Environment built with scatter foliage, decal-based wear, and physically-based erosion maps.",
+          "image": ""
+        },
+        {
+          "title": "Outcome",
+          "text": "Atmospheric scene lit with golden-hour HDRI and volumetric god-rays for dramatic effect.",
+          "image": "images/project_epsilon_3.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Project Zeta",
+      "date": "2023-10-20",
+      "thumbnail": "images/project_zeta_thumbnail.jpg",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "A 3D model of a futuristic vehicle blending aerodynamic form with heavy-duty utility design.",
+          "image": "images/project_zeta_1.jpg"
+        },
+        {
+          "title": "Process",
+          "text": "Designed from concept sketches into a clean NURBS surface model then converted to subdivision mesh.",
+          "image": "images/project_zeta_2.jpg"
+        },
+        {
+          "title": "Outcome",
+          "text": "Studio-lit product render with a turntable animation for portfolio presentation.",
+          "image": "images/project_zeta_3.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Project Eta",
+      "date": "2023-11-15",
+      "thumbnail": "images/project_eta_thumbnail.jpg",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "A 3D model of a fantasy creature with organic musculature and intricate scale detail.",
+          "image": "images/project_eta_1.jpg"
+        },
+        {
+          "title": "Process",
+          "text": "ZBrush sculpt with dynamesh for primary forms, then refined with layers for secondary and tertiary detail.",
+          "image": "images/project_eta_2.jpg"
+        },
+        {
+          "title": "Outcome",
+          "text": "Rigged and posed for a hero shot render, with subsurface scattering skin shader for realism.",
+          "image": "images/project_eta_3.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Project Theta",
+      "date": "2023-12-01",
+      "thumbnail": "images/project_theta_thumbnail.jpg",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "A 3D model of a modern skyscraper with parametric facade patterning and reflective curtain-wall glazing.",
+          "image": "images/project_theta_1.jpg"
+        },
+        {
+          "title": "Process",
+          "text": "Procedural facade generated via Houdini, exported as geometry cache into the Blender scene.",
+          "image": "images/project_theta_2.jpg"
+        },
+        {
+          "title": "Outcome",
+          "text": "Dusk render with interior light bloom and city-reflection in the glass panels.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "name": "Project Iota",
+      "date": "2024-01-10",
+      "thumbnail": "images/project_iota_thumbnail.jpg",
+      "sections": [
+        {
+          "title": "Overview",
+          "text": "A 3D model of an underwater scene with bioluminescent coral, kelp forests and caustic lighting.",
+          "image": "images/project_iota_1.jpg"
+        },
+        {
+          "title": "Process",
+          "text": "Volume scatter shader used for water medium, caustics projected via light texture maps.",
+          "image": "images/project_iota_2.jpg"
+        },
+        {
+          "title": "Outcome",
+          "text": "Final animation loop rendered in Cycles at 60 fps for use as an ambient background installation.",
+          "image": "images/project_iota_3.jpg"
+        }
+      ]
     }
+  ],
+  "about": {
+    "profile": {
+      "image": "/assets/images/profile.jpg",
+      "name": "Khôi Tran",
+      "subtitle": "Mechanical Engineering | Design & Technology",
+      "subtitleUpper": ""
+    },
+    "sections": [
+      {
+        "title": "Who I Am",
+        "text": "\tHi! I'm currently studying Mechanical Engineering at Concordia expected to graduate early 2029. I have a background in web development and information technology. Originally from Vancouver, BC, I moved to Montreal in search of opportunity and to make connections.\n\n\tMy interest for technology started at a young age, growing up alongside the rise of the internet. Building my first PC was the moment that truly kickstarted my journey. It inspired me to run a small refurbishing side hustle, sourcing cheap parts from the second-hand market, assembling them into complete machines and reselling them for a profit. That hands-on curiosity carried me into software, where I completed a coding bootcamp at BrainStation and took on freelance web development projects.\n\n\tI then earned my CompTIA+ certification and landed a role as an Implementation Technician at F3 Technologies, managing POS, networking and security for small-medium size restaurants across Vancouver. During this time, I also worked at Capilano University as a Maintenance Worker. To which I enrolled in their Engineering Transition Program, a decision that brought me back to my deeper passion for designing and problem solving in the physical world.\n\n\tThat program reignited something in me. The design projects, CAD modeling, prototyping and the whole process of engineering a solution from research to manufacturing, I found myself genuinely excited in a way I hadn't felt academically before. That's what brought me to Montreal where I can make use of my French as well. Whether it's drafting a design or getting into the technical weeds, I'm at my best when I'm doing both. I'm always eager to learn new skills, hone current ones and gain experience in industry."
+      },
+      {
+        "title": "What I Bring",
+        "text": "Engineering: SolidWorks | Programming: C, C++, JavaScript, HTML, CSS | Development: Frontend & Backend, Git, MySQL | Productivity: Microsoft 365, Word, Excel, PowerPoint | Collaboration: Microsoft Teams"
+      },
+      {
+        "title": "What I'm Looking For",
+        "text": "I like building things from start to finish. This portfolio is one example, where I designed and developed everything myself. I enjoy the full process, from the initial idea to refining and improving it over time. Most of my projects reflect that same mindset of creating something practical and well thought out."
+      }
+    ]
+  }
 }

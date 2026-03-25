@@ -20,3 +20,8 @@ html::-webkit-scrollbar {
 a {
   color: inherit;
 }
+
+p {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

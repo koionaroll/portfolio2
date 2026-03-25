@@ -131,6 +131,7 @@ const MobileMenu = styled.nav`
   top: 100%;
   left: 0;
   right: 0;
+  z-index: 100;
   background-color: ${(props) => (props.isDarkTheme ? stylevar.style.lightPrimary : stylevar.style.darkPrimary)};
   padding: 2rem 1rem;
   gap: 1.5rem;
