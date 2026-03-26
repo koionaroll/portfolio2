@@ -30,9 +30,9 @@
                                    ]
                      },
                      {
-                         "name":  "Project Beta",
+                         "name":  "",
                          "date":  "May 2026",
-                         "thumbnail":  "images/project_beta_thumbnail.jpg",
+                         "thumbnail":  "",
                          "sections":  [
                                           {
                                               "title":  "Overview",
@@ -50,207 +50,11 @@
                                               "image":  "images/project_beta_3.jpg"
                                           }
                                       ],
-                         "shortDescription":  "A detailed 3D model of a medieval castle with hand-sculpted stonework and intricate battlements.",
+                         "shortDescription":  "Coming Soon",
                          "stack":  [
-                                       "ZBrush",
-                                       "Substance Painter",
-                                       "Unreal Engine"
-                                   ]
-                     },
-                     {
-                         "name":  "Project Gamma",
-                         "date":  "2023-06-10",
-                         "thumbnail":  "images/project_gamma_thumbnail.jpg",
-                         "sections":  [
-                                          {
-                                              "title":  "Overview",
-                                              "text":  "A 3D model of a modern architectural building exploring minimalist concrete and glass design.",
-                                              "image":  "images/project_gamma_1.jpg"
-                                          },
-                                          {
-                                              "title":  "Process",
-                                              "text":  "Modelled to architectural specification with accurate material properties and natural lighting simulation.",
-                                              "image":  "images/project_gamma_2.jpg"
-                                          },
-                                          {
-                                              "title":  "Outcome",
-                                              "text":  "Photorealistic visualisation used for client presentation and planning approval.",
-                                              "image":  ""
-                                          }
-                                      ],
-                         "shortDescription":  "A 3D model of a modern architectural building exploring minimalist concrete and glass design.",
-                         "stack":  [
-                                       "Blender",
-                                       "PBR Materials",
-                                       "ArchViz"
-                                   ]
-                     },
-                     {
-                         "name":  "Project Delta",
-                         "date":  "2023-08-05",
-                         "thumbnail":  "images/project_delta_thumbnail.jpg",
-                         "sections":  [
-                                          {
-                                              "title":  "Overview",
-                                              "text":  "A 3D model of a space station orbiting Earth, designed with modular docking bays and solar arrays.",
-                                              "image":  "images/project_delta_1.jpg"
-                                          },
-                                          {
-                                              "title":  "Process",
-                                              "text":  "Hard-surface modelling with kitbash components, textured to simulate weathered metal and worn panels.",
-                                              "image":  "images/project_delta_2.jpg"
-                                          },
-                                          {
-                                              "title":  "Outcome",
-                                              "text":  "Rendered in a deep-space HDRI environment with motion blur for cinematic stills.",
-                                              "image":  "images/project_delta_3.jpg"
-                                          }
-                                      ],
-                         "shortDescription":  "A 3D model of a space station orbiting Earth, designed with modular docking bays and solar arrays.",
-                         "stack":  [
-                                       "Blender",
-                                       "Hard Surface",
-                                       "HDRI Lighting"
-                                   ]
-                     },
-                     {
-                         "name":  "Project Epsilon",
-                         "date":  "2023-09-12",
-                         "thumbnail":  "images/project_epsilon_thumbnail.jpg",
-                         "sections":  [
-                                          {
-                                              "title":  "Overview",
-                                              "text":  "A 3D model of an ancient temple with moss-covered columns and crumbling stonework.",
-                                              "image":  "images/project_epsilon_1.jpg"
-                                          },
-                                          {
-                                              "title":  "Process",
-                                              "text":  "Environment built with scatter foliage, decal-based wear, and physically-based erosion maps.",
-                                              "image":  ""
-                                          },
-                                          {
-                                              "title":  "Outcome",
-                                              "text":  "Atmospheric scene lit with golden-hour HDRI and volumetric god-rays for dramatic effect.",
-                                              "image":  "images/project_epsilon_3.jpg"
-                                          }
-                                      ],
-                         "shortDescription":  "A 3D model of an ancient temple with moss-covered columns and crumbling stonework.",
-                         "stack":  [
-                                       "Blender",
-                                       "Environment Art",
-                                       "Volumetrics"
-                                   ]
-                     },
-                     {
-                         "name":  "Project Zeta",
-                         "date":  "2023-10-20",
-                         "thumbnail":  "images/project_zeta_thumbnail.jpg",
-                         "sections":  [
-                                          {
-                                              "title":  "Overview",
-                                              "text":  "A 3D model of a futuristic vehicle blending aerodynamic form with heavy-duty utility design.",
-                                              "image":  "images/project_zeta_1.jpg"
-                                          },
-                                          {
-                                              "title":  "Process",
-                                              "text":  "Designed from concept sketches into a clean NURBS surface model then converted to subdivision mesh.",
-                                              "image":  "images/project_zeta_2.jpg"
-                                          },
-                                          {
-                                              "title":  "Outcome",
-                                              "text":  "Studio-lit product render with a turntable animation for portfolio presentation.",
-                                              "image":  "images/project_zeta_3.jpg"
-                                          }
-                                      ],
-                         "shortDescription":  "A 3D model of a futuristic vehicle blending aerodynamic form with heavy-duty utility design.",
-                         "stack":  [
-                                       "NURBS",
-                                       "Subdivision",
-                                       "Product Rendering"
-                                   ]
-                     },
-                     {
-                         "name":  "Project Eta",
-                         "date":  "2023-11-15",
-                         "thumbnail":  "images/project_eta_thumbnail.jpg",
-                         "sections":  [
-                                          {
-                                              "title":  "Overview",
-                                              "text":  "A 3D model of a fantasy creature with organic musculature and intricate scale detail.",
-                                              "image":  "images/project_eta_1.jpg"
-                                          },
-                                          {
-                                              "title":  "Process",
-                                              "text":  "ZBrush sculpt with dynamesh for primary forms, then refined with layers for secondary and tertiary detail.",
-                                              "image":  "images/project_eta_2.jpg"
-                                          },
-                                          {
-                                              "title":  "Outcome",
-                                              "text":  "Rigged and posed for a hero shot render, with subsurface scattering skin shader for realism.",
-                                              "image":  "images/project_eta_3.jpg"
-                                          }
-                                      ],
-                         "shortDescription":  "A 3D model of a fantasy creature with organic musculature and intricate scale detail.",
-                         "stack":  [
-                                       "ZBrush",
-                                       "Rigging",
-                                       "Skin Shading"
-                                   ]
-                     },
-                     {
-                         "name":  "Project Theta",
-                         "date":  "2023-12-01",
-                         "thumbnail":  "images/project_theta_thumbnail.jpg",
-                         "sections":  [
-                                          {
-                                              "title":  "Overview",
-                                              "text":  "A 3D model of a modern skyscraper with parametric facade patterning and reflective curtain-wall glazing.",
-                                              "image":  "images/project_theta_1.jpg"
-                                          },
-                                          {
-                                              "title":  "Process",
-                                              "text":  "Procedural facade generated via Houdini, exported as geometry cache into the Blender scene.",
-                                              "image":  "images/project_theta_2.jpg"
-                                          },
-                                          {
-                                              "title":  "Outcome",
-                                              "text":  "Dusk render with interior light bloom and city-reflection in the glass panels.",
-                                              "image":  ""
-                                          }
-                                      ],
-                         "shortDescription":  "A 3D model of a modern skyscraper with parametric facade patterning and reflective curtain-wall glazing.",
-                         "stack":  [
-                                       "Houdini",
-                                       "Blender",
-                                       "Procedural Design"
-                                   ]
-                     },
-                     {
-                         "name":  "Project Iota",
-                         "date":  "2024-01-10",
-                         "thumbnail":  "images/project_iota_thumbnail.jpg",
-                         "sections":  [
-                                          {
-                                              "title":  "Overview",
-                                              "text":  "A 3D model of an underwater scene with bioluminescent coral, kelp forests and caustic lighting.",
-                                              "image":  "images/project_iota_1.jpg"
-                                          },
-                                          {
-                                              "title":  "Process",
-                                              "text":  "Volume scatter shader used for water medium, caustics projected via light texture maps.",
-                                              "image":  "images/project_iota_2.jpg"
-                                          },
-                                          {
-                                              "title":  "Outcome",
-                                              "text":  "Final animation loop rendered in Cycles at 60 fps for use as an ambient background installation.",
-                                              "image":  "images/project_iota_3.jpg"
-                                          }
-                                      ],
-                         "shortDescription":  "A 3D model of an underwater scene with bioluminescent coral, kelp forests and caustic lighting.",
-                         "stack":  [
-                                       "Cycles",
-                                       "Volume Shader",
-                                       "Animation"
+                                       "Excel",
+                                       "PowerQuery",
+                                       "API Call"
                                    ]
                      }
                  ],
@@ -268,7 +72,7 @@
                                    },
                                    {
                                        "title":  "What I Bring",
-                                       "text":  "\tA growing foundation in mechanical engineering with hands-on experience in CAD modeling, prototyping and the full design process from concept to solution. I approach problems methodically and enjoy the challenge of turning ideas into something tangible.\n\n\tA background in IT and web development gives me a versatile technical toolkit that most engineering students don\u0027t have. From building and networking computers to writing clean code, I\u0027m comfortable working across both hardware and software environments.\n\n\tHaving worked across multiple industries, from coordinating campus events with various departments to training clients on technical systems, I\u0027m used to translating technical concepts for non-technical people and working effectively in team settings.\n\n\tI\u0027m fluent in English, French and Vietnamese, giving me the ability to work comfortably in both of Canada\u0027s official languages and connect with a broader range of people and environments.\n\n\tThe best way to get a sense of what I can do is to see it for yourself — take a look around the site and explore the projects I\u0027ve worked on along the way.\n\nEngineering: SolidWorks\nProgramming: C, C++, JavaScript, HTML, CSS\nDevelopment: Frontend \u0026 Backend, Git, MySQL\nProductivity: Microsoft 365, Word, Excel, PowerPoint\nCollaboration: Microsoft Teams"
+                                       "text":  "\tA growing foundation in mechanical engineering with hands-on experience in CAD modeling, prototyping and the full design process from concept to solution. I approach problems methodically and enjoy the challenge of turning ideas into something tangible.\n\n\tA background in IT and web development gives me a versatile technical toolkit. From building and networking computers to writing clean code, I'm comfortable working across both hardware and software environments.\n\n\tHaving worked across multiple industries, from coordinating campus events with various departments to training clients on technical systems, I\u0027m used to translating technical concepts for non-technical people and working effectively in team settings.\n\n\tI\u0027m fluent in English, French and Vietnamese, giving me the ability to work comfortably in both of Canada\u0027s official languages and connect with a broader range of people and environments.\n\n\tThe best way to get a sense of what I can do is to see it for yourself. Take a look around the site and explore the projects I've worked on along the way.\n\nEngineering: SolidWorks\nProgramming: C, C++, JavaScript, HTML, CSS\nDevelopment: Frontend \u0026 Backend, Git, MySQL\nProductivity: Microsoft 365, Word, Excel, PowerPoint\nCollaboration: Microsoft Teams"
                                    },
                                    {
                                        "title":  "What I\u0027m Looking For",
