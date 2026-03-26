@@ -22,10 +22,21 @@ const SectionsGrid = styled.div`
 
 const Section = styled.div``;
 
-const SectionImage = styled.img`
+const SectionMedia = styled.div`
   width: 100%;
   display: block;
   margin-bottom: 12px;
+`;
+
+const SectionImage = styled.img`
+  width: 100%;
+  display: block;
+  object-fit: cover;
+`;
+
+const SectionVideo = styled.video`
+  width: 100%;
+  display: block;
   object-fit: cover;
 `;
 
@@ -66,10 +77,23 @@ function Project({ isDarkTheme }) {
       <SectionsGrid>
         {project.sections.map((section, i) => (
           <Section key={i}>
-            {section.image && (
-              <SectionImage src={section.image} alt={section.title} />
-            )}
             <SectionTitle $isDark={isDarkTheme}>{section.title}</SectionTitle>
+            {(section.image || section.video) && (
+              <SectionMedia>
+                {section.image && (
+                  <SectionImage src={section.image} alt={section.title} />
+                )}
+                {section.video && (
+                  <SectionVideo
+                    src={section.video}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
+                )}
+              </SectionMedia>
+            )}
             <SectionText $isDark={isDarkTheme}>{section.text}</SectionText>
           </Section>
         ))}
