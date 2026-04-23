@@ -117,9 +117,9 @@ function Grid({ isDarkTheme }) {
           <Link key={index} to={`/project/${project.name}`} style={{ textDecoration: "none" }}>
             <ProjectCard isDarkTheme={isDarkTheme}>
               {project.thumbnail ? (
-                <img src={project.thumbnail} alt={project.name} />
+                <img src={project.thumbnail} />
               ) : (
-                <span>{project.name}</span>
+                <></>
               )}
               <ProjectOverlay className="project-overlay" isDarkTheme={isDarkTheme}>
                 <OverlayTitle>{project.name}</OverlayTitle>

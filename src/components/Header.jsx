@@ -41,7 +41,9 @@ const Logo = styled.button`
   cursor: pointer;
   transition: color 0.3s ease;
 
+  
   &:hover {
+    @media (min-width: ${stylevar.style.mobileWidth}){color: ${(props) => (props.isDarkTheme ? stylevar.style.darkPrimary : stylevar.style.lightPrimary)}}
     color: ${(props) => (props.isDarkTheme ? stylevar.style.lightPrimary : stylevar.style.darkPrimary)};
   }
 
