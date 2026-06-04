@@ -32,15 +32,15 @@
       "date": "May 2026",
       "thumbnail": "./assets/images/scrysheetsLogo.png",
       "textSections": [
-  {
-    "title": "Overview",
-    "text": "\tScrySheets is an Excel-based deck building and card management tool for Magic: The Gathering. Built using VBA, Power Query and the Scryfall API, it automatically imports card data into a searchable database and streamlines the process of creating, organizing and pricing decks. The project was developed to explore how spreadsheet software can be extended into a functional application through automation and custom user interfaces."
-  },
-  {
-    "title": "Process",
-    "text": "\tThe project began with a Power Query pipeline that retrieves and refreshes card data directly from the Scryfall API. VBA macros were then developed to handle card searching, deck construction, printing and database management. To improve usability, I designed a custom deck editor that automatically categorizes cards by type and tracks deck value. Through this project, I gained experience working with APIs, data transformation, VBA programming and user-focused interface design within Excel."
-  }
-],
+        {
+          "title": "Overview",
+          "text": "\tScrySheets is an Excel-based deck building and card management tool for Magic: The Gathering. Built using VBA, Power Query and the Scryfall API, it automatically imports card data into a searchable database and streamlines the process of creating, organizing and pricing decks. The project was developed to explore how spreadsheet software can be extended into a functional application through automation and custom user interfaces."
+        },
+        {
+          "title": "Process",
+          "text": "\tThe project began with a Power Query pipeline that retrieves and refreshes card data directly from the Scryfall API. Magic is an ever-expanding game with new cards being added constantly and fluctuating prices so I wanted and option to have the database be dynamic. The database sends a requests for the name of the most recent ScryFall database, then it sends a new API call using the most recent name to fetch the most recent bulk data. VBA macros were then developed to handle card searching, deck construction, printing and database management. The card searcher takes input from the user and finds card objects from the database and appends them to the deck-building section based on card type. I built in user-validation for partial matching of card names as well as a suggestion bar for similar entries. Deck statistics such as price breakdown per card type are made into graphs and displayed below to better represent the data."
+        }
+      ],
       "mediaSections": [
         {
           "title": "Logic Flow Chart",
@@ -81,18 +81,18 @@
       "subtitleUpper": ""
     },
     "sections": [
-  {
-    "title": "Who I Am",
-    "text": "\tI'm a Mechanical Engineering student at Concordia University, expected to graduate in 2029. My background spans engineering, IT and web development, giving me a unique mix of technical and problem-solving experience. From building computers and developing websites to creating CAD models and prototypes, I've always enjoyed turning ideas into practical solutions.\n\n\tBefore pursuing engineering, I worked in IT, earned my CompTIA A+ certification and supported networking, POS and security systems for businesses across Vancouver. Through hands-on projects and industry experience, I discovered a passion for design and engineering that ultimately brought me to Montreal. Today, I'm focused on developing my skills, gaining industry experience and continuing to learn wherever I can."
-  },
-  {
-    "title": "Skills & Experience",
-    "text": "\tA growing foundation in mechanical engineering supported by experience in CAD modeling, prototyping and technical problem solving. My background in IT and web development allows me to work comfortably across both hardware and software environments.\n\n\tI bring strong communication skills, experience working with clients and teams, and fluency in English, French and Vietnamese.\n\nEngineering: SolidWorks\nProgramming: C, C++, JavaScript, HTML, CSS\nDevelopment: Frontend & Backend, Git, MySQL\nProductivity: Microsoft 365, Word, Excel, PowerPoint\nCollaboration: Microsoft Teams"
-  },
-  {
-    "title": "Looking Ahead",
-    "text": "\tI'm seeking opportunities to gain hands-on engineering experience, learn from industry professionals and contribute to meaningful projects. Outside of school, you'll usually find me training for triathlons, playing badminton or enjoying a board game with friends. If you'd like to connect, feel free to reach out."
-  }
-]
+      {
+        "title": "Who I Am",
+        "text": "\tI'm a Mechanical Engineering student at Concordia University, expected to graduate in 2029. My background spans engineering, IT and web development, giving me a unique mix of technical and problem-solving experience. From building computers and developing websites to creating CAD models and prototypes, I've always enjoyed turning ideas into practical solutions.\n\n\tBefore pursuing engineering, I worked in IT, earned my CompTIA A+ certification and supported networking, POS and security systems for businesses across Vancouver. Through hands-on projects and industry experience, I discovered a passion for design and engineering that ultimately brought me to Montreal. Today, I'm focused on developing my skills, gaining industry experience and continuing to learn wherever I can."
+      },
+      {
+        "title": "Skills & Experience",
+        "text": "\tA growing foundation in mechanical engineering supported by experience in CAD modeling, prototyping and technical problem solving. My background in IT and web development allows me to work comfortably across both hardware and software environments.\n\n\tI bring strong communication skills, experience working with clients and teams, and fluency in English, French and Vietnamese.\n\nEngineering: SolidWorks\nProgramming: C, C++, JavaScript, HTML, CSS\nDevelopment: Frontend & Backend, Git, MySQL\nProductivity: Microsoft 365, Word, Excel, PowerPoint\nCollaboration: Microsoft Teams"
+      },
+      {
+        "title": "Looking Ahead",
+        "text": "\tI'm seeking opportunities to gain hands-on engineering experience, learn from industry professionals and contribute to meaningful projects. Outside of school, you'll usually find me training for triathlons, playing badminton or enjoying a board game with friends. If you'd like to connect, feel free to reach out."
+      }
+    ]
   }
 }
