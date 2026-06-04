@@ -34,7 +34,7 @@ const ProjectCard = styled.div`
   img {
     // thumbnail should be 4:3 
     width: 100%;
-    height: 80%;
+    height: 75%;
     object-fit: contain;
     padding: 2rem;
     transition: transform 0.2s ease;

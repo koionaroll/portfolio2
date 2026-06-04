@@ -8,11 +8,12 @@ const Container = styled.div``;
 
 const SectionsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(${({ columns }) => Math.min(columns, 3)}, 1fr);
   gap: 40px;
 
   @media (max-width: ${stylevar.style.desktopWidth}) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(${({ columns }) => Math.min(columns, 2)}, 1fr);
   }
 
   @media (max-width: ${stylevar.style.tabletWidth}) {
@@ -32,6 +33,8 @@ const SectionImage = styled.img`
   width: 100%;
   display: block;
   object-fit: cover;
+
+  
 `;
 
 const SectionVideo = styled.video`
@@ -56,6 +59,24 @@ const SectionText = styled.p`
   margin: 0;
 `;
 
+const MediaSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 48px;
+`;
+
+const MediaItem = styled.div`
+  width: 100%;
+`;
+
+const MediaTitle = styled.h4`
+  font-family: ${stylevar.style.blackFontFamily};
+  font-size: ${stylevar.style.largeFontSize};
+  color: ${({ $isDark }) => ($isDark ? stylevar.style.lightPrimary : stylevar.style.darkPrimary)};
+  margin: 0 0 12px 0;
+`;
+
 const DateTag = styled.p`
   font-family: ${stylevar.style.mediumFontFamily};
   font-size: ${stylevar.style.smallFontSize};
@@ -71,14 +92,29 @@ function Project({ isDarkTheme }) {
     return <div>Project not found</div>;
   }
 
+  const textSections = project.textSections || [];
+  const mediaSections = project.mediaSections || [];
+
   return (
     <Container>
       <DateTag $isDark={isDarkTheme}>{project.date}</DateTag>
-      <SectionsGrid>
-        {project.sections.map((section, i) => (
+
+      <SectionsGrid columns={Math.max(textSections.length, 1)}>
+        {textSections.map((section, i) => (
           <Section key={i}>
             <SectionTitle $isDark={isDarkTheme}>{section.title}</SectionTitle>
-            {(section.image || section.video) && (
+            <SectionText $isDark={isDarkTheme}>{section.text}</SectionText>
+          </Section>
+        ))}
+      </SectionsGrid>
+
+      {mediaSections.length > 0 && (
+        <MediaSection>
+          {mediaSections.map((section, i) => (
+            <MediaItem key={i}>
+              {section.title && (
+                <MediaTitle $isDark={isDarkTheme}>{section.title}</MediaTitle>
+              )}
               <SectionMedia>
                 {section.image && (
                   <SectionImage src={section.image} alt={section.title} />
@@ -93,11 +129,10 @@ function Project({ isDarkTheme }) {
                   />
                 )}
               </SectionMedia>
-            )}
-            <SectionText $isDark={isDarkTheme}>{section.text}</SectionText>
-          </Section>
-        ))}
-      </SectionsGrid>
+            </MediaItem>
+          ))}
+        </MediaSection>
+      )}
     </Container>
   );
 }
