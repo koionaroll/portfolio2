@@ -81,7 +81,16 @@ const DateTag = styled.p`
   font-family: ${stylevar.style.mediumFontFamily};
   font-size: ${stylevar.style.smallFontSize};
   color: ${({ $isDark }) => ($isDark ? stylevar.style.lightPrimary : stylevar.style.darkPrimary)};
+  `;
+
+const RepoLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  font-family: ${stylevar.style.blackFontFamily};
+  font-size: ${stylevar.style.mediumFontSize};
+  color: ${({ $isDark }) => ($isDark ? stylevar.style.lightPrimary : stylevar.style.darkPrimary)};
   margin: 0 0 32px 0;
+  text-decoration: underline;
 `;
 
 function Project({ isDarkTheme }) {
@@ -97,7 +106,12 @@ function Project({ isDarkTheme }) {
 
   return (
     <Container>
-      <DateTag $isDark={isDarkTheme}>{project.date}</DateTag>
+      
+      <DateTag $isDark={isDarkTheme}>{project.date}
+      </DateTag>
+      <RepoLink href={project.repoLink} target="_blank" rel="noopener noreferrer" $isDark={isDarkTheme}>
+        {project.repoLink? "Link to repo" : ""}
+      </RepoLink>
 
       <SectionsGrid columns={Math.max(textSections.length, 1)}>
         {textSections.map((section, i) => (

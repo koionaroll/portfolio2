@@ -31,6 +31,7 @@
       "name": "ScrySheets",
       "date": "May 2026",
       "thumbnail": "./assets/images/scrysheetsLogo.png",
+      "repoLink":"https://github.com/koionaroll/ScrySheets",
       "textSections": [
         {
           "title": "Overview",
