@@ -1,37 +1,10 @@
 {
   "projects": [
     {
-      "name": "1991 Mazda Miata",
-      "date": "Dec 2024",
-      "thumbnail": "/assets/images/miata.png",
-      "textSections": [
-        {
-          "title": "Overview",
-          "text": "\tWith the goal of learning the basics of 3D modeling, projection designing and assembly mates, I undertook the task of modeling my favorite car, the 1991 MX-5 in SolidWorks. Using reference pictures, I modeled each static panel of the chassis. I then created separate components for moving parts such as the swing doors, spinning wheels, the hydraulic trunk and the iconic winking headlights. While not an engineering-precise drawing, the model is complete enough to be exported and rendered, opening the door to creative applications such as advertisement visuals, producing 3D printed miniatures and more."
-        },
-        {
-          "title": "Process",
-          "text": "\tI began by projecting to-scale reference images of the front, side and top views onto their corresponding axes in SolidWorks. Using the 3D Sketch feature, I was then able to draw freely in space rather than being confined to a single plane. By locking the camera to one reference view at a time, I sketched each body panel along that projection, then switched to another view to adjust and vary the curvature. This created a 3D boundary that curved and bent in space according to all three references simultaneously.\n\n\tTo fill these boundaries into actual surfaces, I used Surface Loft and Fill Surface, then applied Thicken to give each panel its physical form. This process was repeated for each non-moving body panel on one half of the car, which was then mirrored to complete the symmetry. Separate components such as the wheels, steering wheel, trunk, seats and headlights, were modeled independently using extrusions built up from basic shapes and brought together in the final assembly."
-        }
-      ],
-      "mediaSections": [
-        {
-          "title": "To scale reference pictures projected on each axis",
-          "image": "/assets/images/miata1.PNG"
-        },
-        {
-          "title": "Features",
-          "video": "/assets/images/miataFeatures.mp4"
-        }
-      ],
-      "shortDescription": "A 3D assembly of a 1991 Mazda Miata modeled in SolidWorks",
-      "stack": ["SolidWorks", "3D Modeling", "Assembly Mates"]
-    },
-    {
       "name": "ScrySheets",
       "date": "May 2026",
       "thumbnail": "./assets/images/scrysheetsLogo.png",
-      "repoLink":"https://github.com/koionaroll/ScrySheets",
+      "repoLink": "https://github.com/koionaroll/ScrySheets",
       "textSections": [
         {
           "title": "Overview",
@@ -58,6 +31,74 @@
       ],
       "shortDescription": "Card searcher and database built in Excel",
       "stack": ["Excel", "PowerQuery", "ScryFall API", "VBA"]
+    },
+    {
+      "name": "Crawler",
+      "date": "Apr 2025",
+      "thumbnail": "/assets/images/crawler.png",
+      "textSections": [
+{
+"title": "Overview",
+"text": "\tAs part of a multidisciplinary engineering design project, our team developed a scaled-down walking wheelchair prototype intended to explore alternative accessibility solutions for navigating terrain that conventional wheelchairs struggle to traverse. Inspired by quadrupedal locomotion, the robot utilized a TrotBot linkage mechanism to convert rotational motor motion into a walking gait capable of overcoming small obstacles and uneven surfaces.\n\n\tThe project was evaluated through a series of engineering benchmarks including walking speed, obstacle traversal, incline climbing, payload capacity, and maneuverability. My role focused on electronics integration, embedded programming, mechanical design, and project coordination. Through multiple design iterations, the final prototype achieved substantial improvements in speed, payload capacity, traction, and overall reliability compared to the initial midterm prototype."
+},
+{
+  "title": "Design & Development",
+  "text": "\tDevelopment began with a proof-of-concept prototype constructed from wooden linkages, DC gear motors, and a wired power supply. While the initial design successfully demonstrated the walking mechanism, testing revealed several engineering challenges including excessive weight, insufficient motor torque, high friction within the linkage system, and manufacturing inaccuracies caused by manually fabricated components. These findings guided the redesign and established the performance targets for the final prototype.\n\n\tI was responsible for sourcing the motors, batteries, Arduino control hardware, motor drivers, and supporting electronics. The robot was controlled using an Arduino Uno paired with an Adafruit Motor Shield, allowing independent control of four DC motors that drove the quadrupedal TrotBot linkage mechanism. I developed and refined the Arduino control software responsible for coordinating motor sequencing and gait timing. A major focus of the redesign was the power system, where we transitioned from a cumbersome wired setup to lightweight 18650 lithium-ion cells connected in series. I also tuned the DC-DC voltage converter to safely maximize the voltage supplied to the motors, increasing available torque and significantly improving overall performance.\n\n\tMechanically, the robot was redesigned around a fully 3D-printed PLA chassis and linkage system. Precision-manufactured components eliminated alignment issues present in the wooden prototype, reducing friction and improving efficiency throughout the mechanism. Additional improvements included custom motor mounting arms, reinforced structural components, and redesigned feet with increased contact area for improved traction and stability. Alongside my technical contributions, I coordinated project milestones, delegated tasks across team members, and helped guide the project from concept to final testing."
+},
+{
+"title": "Testing & Results",
+"text": "\tBoth the midterm and final prototypes were evaluated using identical benchmark tests, allowing performance improvements to be measured quantitatively. Following the redesign, the robot completed the 1 m walking test in 12.51 seconds compared to 21.58 seconds for the original prototype, representing an improvement of approximately 42%. Payload drag capacity increased from 1.40 kg to 2.18 kg, while payload carrying capacity improved from 0.29 kg to 0.88 kg.\n\n\tThe redesigned power system, lighter structure, reduced mechanical friction, and improved traction collectively resulted in a more capable walking platform that performed significantly better on uneven terrain and obstacle courses. The project demonstrated how iterative engineering design, data-driven testing, and multidisciplinary collaboration can transform a proof-of-concept prototype into a substantially more capable system."
+}
+],
+    
+      "mediaSections": [
+        {
+          "title": "Midterm Prototype and Roller Terrain Testing",
+          "video": "/assets/images/crawler1.mp4"
+        },
+        {
+          "title": "Final 3D Printed Assembly",
+          "image": "/assets/images/crawler2.jpeg"
+        },
+        {
+          "title": "Final Roller Terrain Testing",
+          "video": "/assets/images/crawler3.mp4"
+        }
+      ],
+      "shortDescription": "3D printed quadrupedal crawler",
+      "stack":[
+        "Arduino",
+        "SolidWorks",
+        "3D Printing",
+        "Mechanical Design"
+      ]
+    },
+    {
+      "name": "1991 Mazda Miata",
+      "date": "Dec 2024",
+      "thumbnail": "/assets/images/miata.png",
+      "textSections": [
+        {
+          "title": "Overview",
+          "text": "\tWith the goal of learning the basics of 3D modeling, projection designing and assembly mates, I undertook the task of modeling my favorite car, the 1991 MX-5 in SolidWorks. Using reference pictures, I modeled each static panel of the chassis. I then created separate components for moving parts such as the swing doors, spinning wheels, the hydraulic trunk and the iconic winking headlights. While not an engineering-precise drawing, the model is complete enough to be exported and rendered, opening the door to creative applications such as advertisement visuals, producing 3D printed miniatures and more."
+        },
+        {
+          "title": "Process",
+          "text": "\tI began by projecting to-scale reference images of the front, side and top views onto their corresponding axes in SolidWorks. Using the 3D Sketch feature, I was then able to draw freely in space rather than being confined to a single plane. By locking the camera to one reference view at a time, I sketched each body panel along that projection, then switched to another view to adjust and vary the curvature. This created a 3D boundary that curved and bent in space according to all three references simultaneously.\n\n\tTo fill these boundaries into actual surfaces, I used Surface Loft and Fill Surface, then applied Thicken to give each panel its physical form. This process was repeated for each non-moving body panel on one half of the car, which was then mirrored to complete the symmetry. Separate components such as the wheels, steering wheel, trunk, seats and headlights, were modeled independently using extrusions built up from basic shapes and brought together in the final assembly."
+        }
+      ],
+      "mediaSections": [
+        {
+          "title": "To scale reference pictures projected on each axis",
+          "image": "/assets/images/miata1.PNG"
+        },
+        {
+          "title": "Features",
+          "video": "/assets/images/miataFeatures.mp4"
+        }
+      ],
+      "shortDescription": "3D assembly of a 1991 Mazda Miata modeled in SolidWorks",
+      "stack": ["SolidWorks", "3D Modeling", "Assembly Mates"]
     },
     {
       "name": "Coming Soon",

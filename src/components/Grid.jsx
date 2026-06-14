@@ -59,6 +59,21 @@ const ProjectOverlay = styled.div`
   }
 `;
 
+const ProjectDate = styled.span`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1;
+  border: 1px solid ${(props) => (props.isDarkTheme ? stylevar.style.lightPrimary : stylevar.style.darkPrimary)};
+  border-radius: 999px;
+  padding: 0.3rem 0.65rem;
+  background-color: ${(props) => (props.isDarkTheme ? stylevar.style.darkPrimary : stylevar.style.lightPrimary)};
+  color: ${(props) => (props.isDarkTheme ? stylevar.style.lightPrimary : stylevar.style.darkPrimary)};
+  font-family: ${stylevar.style.mediumFontFamily};
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+`;
+
 const OverlayTitle = styled.h3`
   margin: 0;
   font-family: ${stylevar.style.blackFontFamily};
@@ -122,6 +137,9 @@ function Grid({ isDarkTheme }) {
                 <></>
               )}
               <ProjectOverlay className="project-overlay" isDarkTheme={isDarkTheme}>
+              {project.date && (
+                <ProjectDate isDarkTheme={isDarkTheme}>{project.date}</ProjectDate>
+              )}
                 <OverlayTitle>{project.name}</OverlayTitle>
                 <OverlayDescription>{project.shortDescription || "No description available."}</OverlayDescription>
                 <StackList>
