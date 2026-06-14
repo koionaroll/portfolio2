@@ -3,7 +3,7 @@
     {
       "name": "ScrySheets",
       "date": "May 2026",
-      "thumbnail": "./assets/images/scrysheetsLogo.png",
+      "thumbnail": "./assets/media/scrysheetsLogo.png",
       "repoLink": "https://github.com/koionaroll/ScrySheets",
       "textSections": [
         {
@@ -18,15 +18,15 @@
       "mediaSections": [
         {
           "title": "Logic Flow Chart",
-          "image": "../assets/images/scrysheets1.png"
+          "image": "../assets/media/scrysheets1.png"
         },
         {
           "title": "Card Database",
-          "image": "../assets/images/scrysheets3.png"
+          "image": "../assets/media/scrysheets3.png"
         },
         {
           "title": "Card Searcher",
-          "image": "../assets/images/scrysheets2.png"
+          "image": "../assets/media/scrysheets2.png"
         }
       ],
       "shortDescription": "Card searcher and database built in Excel",
@@ -35,7 +35,7 @@
     {
       "name": "Crawler",
       "date": "Apr 2025",
-      "thumbnail": "/assets/images/crawler.png",
+      "thumbnail": "/assets/media/crawler.png",
       "textSections": [
 {
 "title": "Overview",
@@ -54,15 +54,15 @@
       "mediaSections": [
         {
           "title": "Midterm Prototype and Roller Terrain Testing",
-          "video": "/assets/images/crawler1.mp4"
+          "video": "/assets/media/crawler1.mp4"
         },
         {
           "title": "Final 3D Printed Assembly",
-          "image": "/assets/images/crawler2.jpeg"
+          "image": "/assets/media/crawler2.jpeg"
         },
         {
           "title": "Final Roller Terrain Testing",
-          "video": "/assets/images/crawler3.mp4"
+          "video": "/assets/media/crawler3.mp4"
         }
       ],
       "shortDescription": "3D printed quadrupedal crawler",
@@ -76,7 +76,7 @@
     {
       "name": "1991 Mazda Miata",
       "date": "Dec 2024",
-      "thumbnail": "/assets/images/miata.png",
+      "thumbnail": "/assets/media/miata.png",
       "textSections": [
         {
           "title": "Overview",
@@ -90,11 +90,11 @@
       "mediaSections": [
         {
           "title": "To scale reference pictures projected on each axis",
-          "image": "/assets/images/miata1.PNG"
+          "image": "/assets/media/miata1.PNG"
         },
         {
           "title": "Features",
-          "video": "/assets/images/miataFeatures.mp4"
+          "video": "/assets/media/miataFeatures.mp4"
         }
       ],
       "shortDescription": "3D assembly of a 1991 Mazda Miata modeled in SolidWorks",
@@ -117,7 +117,7 @@
   ],
   "about": {
     "profile": {
-      "image": "/assets/images/profile.jpg",
+      "image": "/assets/media/profile.jpg",
       "name": "Khôi Tran",
       "subtitle": "Mechanical Engineering | Design & Technology",
       "subtitleUpper": ""
