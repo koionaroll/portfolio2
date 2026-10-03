@@ -30,7 +30,7 @@
         }
       ],
       "shortDescription": "Card searcher and database built in Excel",
-      "stack": ["Excel", "PowerQuery", "ScryFall API", "VBA"]
+      "stack": ["Excel", "PowerQuery", "VBA Macros","ScryFall API"]
     },
     {
       "name": "Crawler",

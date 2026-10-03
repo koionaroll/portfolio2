@@ -89,12 +89,25 @@ const OverlayDescription = styled.p`
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+
+  @media (max-width: ${stylevar.style.tabletWidth}) {
+    display: block;
+    -webkit-line-clamp: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 `;
 
 const StackList = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
+
+  @media (max-width: ${stylevar.style.tabletWidth}) {
+    max-height: 1.8rem;
+    overflow: hidden;
+  }
 `;
 
 const StackItem = styled.span`
@@ -103,6 +116,9 @@ const StackItem = styled.span`
   padding: 0.2rem 0.55rem;
   font-family: ${stylevar.style.mediumFontFamily};
   font-size: 0.75rem;
+
+  /* keep chip content on one line so chips don't wrap internally */
+  white-space: nowrap;
 `;
 
 const GridLayout = styled.div`
